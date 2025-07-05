@@ -1,6 +1,6 @@
 lsi: false
 safe: true
-source: portfolio
+source: /portfolio
 incremental: false
 highlighter: rouge
 gist:
