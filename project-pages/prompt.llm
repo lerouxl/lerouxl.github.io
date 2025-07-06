@@ -1,0 +1,46 @@
+Using the research paper  @Developing Rapid Metal AM deformations Prediction using CNN.md   update the presentation of this paper in   @cnn-metal-am.html 
+
+The first version of the   is not valid, make a new version following the same HTML structure but with:
+
+- A table containing the authors, papers name , DOI
+- Short description of the paper
+- join images saved (Automatised_..) in @/images 
+
+For the table, use the same as this one
+    <div id="main-content">
+
+      <!-- PROJECT HEADER -->
+      <div id="project-header">
+        <div class="main-title">Digital twin-enabled collaborative data management for metal additive manufacturing systems</div>
+        <div class="subheader-text">Publication Details</div>
+        <div class="project-details-content">
+          <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+            <tr>
+              <td style="border: 1px solid #ddd; padding: 12px; font-weight: bold; background-color: #f8f9fa;">Paper Title</td>
+              <td style="border: 1px solid #ddd; padding: 12px;">Digital Twin-enabled Collaborative Data Management for Metal Additive Manufacturing Systems</td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #ddd; padding: 12px; font-weight: bold; background-color: #f8f9fa;">Authors</td>
+              <td style="border: 1px solid #ddd; padding: 12px;">Chao Liu, Léopold Le Roux, Carolin Körner, Olivier Tabaste, Franck Lacan, Samuel Bigot</td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #ddd; padding: 12px; font-weight: bold; background-color: #f8f9fa;">Journal</td>
+              <td style="border: 1px solid #ddd; padding: 12px;">Journal of Manufacturing Systems</td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #ddd; padding: 12px; font-weight: bold; background-color: #f8f9fa;">Publication Info</td>
+              <td style="border: 1px solid #ddd; padding: 12px;">Volume 62, January 2022, Pages 857-874</td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #ddd; padding: 12px; font-weight: bold; background-color: #f8f9fa;">DOI</td>
+              <td style="border: 1px solid #ddd; padding: 12px;"><a href="https://doi.org/10.1016/j.jmsy.2020.05.010" target="_blank">10.1016/j.jmsy.2020.05.010</a></td>
+            </tr>
+          </table>
+        </div>
+        <image class="project-header-image" src="../assets/images/Digital twin-enabled collaborative data management for metal additive manufacturing systems.png">
+      </div>
+
+
+Here is the Sciencedirect content :
+
+

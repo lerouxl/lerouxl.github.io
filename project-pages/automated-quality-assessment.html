@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+     <link rel="icon" href="../assets/images/1311.png" />
+     <title>Léopold LE ROUX - AI Scientist Portfolio</title>
+    <meta name="description" content="Dr. Léopold LE ROUX - AI Scientist portfolio showcasing expertise in deep learning, generative AI, and simulation optimization.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+
+		<script defer src="../js/script.js"></script>
+	</head>
+	<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="../index.html">
+        <span class="nav-title">Léopold LE ROUX</span>
+        <a class="button" href="mailto:le.roux.leopoldja@gmail.com">
+          <span class="button-text">Contact Me</span>
+        </a>
+      </a>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+      <!-- PROJECT HEADER -->
+      <div id="project-header">
+        <div class="main-title">Automatised quality assessment in additive layer manufacturing using layer-by-layer surface measurements and deep learning</div>
+        <div class="subheader-text">Publication Details</div>
+        <div class="project-details-content">
+          <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+            <tr>
+              <td style="border: 1px solid #ddd; padding: 12px; font-weight: bold; background-color: #f8f9fa;">Paper Title</td>
+              <td style="border: 1px solid #ddd; padding: 12px;">Automatised quality assessment in additive layer manufacturing using layer-by-layer surface measurements and deep learning</td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #ddd; padding: 12px; font-weight: bold; background-color: #f8f9fa;">Authors</td>
+              <td style="border: 1px solid #ddd; padding: 12px;">Léopold Le Roux, Chao Liu, Ze Ji, Pierre Kerfriden, Daniel Gage, Felix Feyer, Carolin Körner, Samuel Bigot</td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #ddd; padding: 12px; font-weight: bold; background-color: #f8f9fa;">Journal</td>
+              <td style="border: 1px solid #ddd; padding: 12px;">Procedia CIRP</td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #ddd; padding: 12px; font-weight: bold; background-color: #f8f9fa;">Publication Info</td>
+              <td style="border: 1px solid #ddd; padding: 12px;">Volume 99, 2021, Pages 342-347</td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #ddd; padding: 12px; font-weight: bold; background-color: #f8f9fa;">DOI</td>
+              <td style="border: 1px solid #ddd; padding: 12px;"><a href="https://doi.org/10.1016/j.procir.2021.03.050" target="_blank">10.1016/j.procir.2021.03.050</a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <!-- ABSTRACT -->
+      <div id="project-details">
+        <div class="subheader-text">Abstract</div>
+        <div class="project-details-content">
+          <div class="body-text">Additive manufacturing (AM) has gained high research interests in the past but comes with some drawbacks, such as the difficulty to do in-situ quality monitoring. In this paper, deep learning is used on electron-optical images taken during the Electron Beam Melting (EBM) process to classify the quality of AM layers to achieve automatized quality assessment. A comparative study of several mainstream Convolutional Neural Networks to classify the images has been conducted. The classification accuracy is up to 95%, which demonstrates the great potential to support in-process layer quality control of EBM. And the error analysis has shown that some human misclassification were correctly classified by the Convolutional Neural Networks.</div>
+        </div>
+      </div>
+
+      <!-- PAPER DESCRIPTION -->
+      <div id="project-details">
+        <div class="subheader-text">Research Overview</div>
+        <div class="project-details-content">
+          <div class="body-text">In this paper, we present a new automatic quality classification method to detect pores and bulging defects occurring when using an Electron Beam Melting (EBM) AM printer to process Ti-6Al-4V powder. Simple 15 mm by 15 mm cubical parts were produced using various scanning speeds and beam powers, leading to 2 types of defects: porosity and bulging. Throughout the AM process, 16,324 electron-optical (ELO) images of the printed layers were collected and classified by a human expert into three categories: porous (43%), normal (38%), and bulging (19%).</div>
+          
+          <div class="body-text">We compared five of the most famous Deep Learning algorithms due to their popularity and good results, namely AlexNet, DenseNet, ResNet, SqueezeNet and VGG. Each CNN was trained twice, once with transfer learning (pre-trained) and once without it (untrained), to compare their capacity to learn from scratch on the data. Data pre-processing consisted of extracting the print part from the powder bed and removing the edge of the print to protect against border artefacts.</div>
+
+          <div style="text-align: center; margin: 30px 0;">
+            <img src="../assets/images/Automatised_quality_Fig3.png" alt="ELO images of different layer types" style="max-width: 100%; height: auto; border: 1px solid #ddd;">
+            <div class="body-text" style="margin-top: 10px; font-size: 0.9em; color: #666;"><strong>Figure 3:</strong> ELO images of layer types: (a) porous layer with black dots indicating pores, (b) bulging layer showing deformation, (c) normal quality layer, (d) layer with both porous and bulging features</div>
+          </div>
+
+          <div class="body-text">The comparison test shows, as expected, that pre-trained CNNs have overall better accuracy and faster training than untrained CNNs. The top accuracy was obtained with a pre-trained SqueezeNet (95.1%). Calculations were performed using Python 3.7.4 and PyTorch 1.3.1 on GPU, enabling image classification in less than 0.01 seconds, making real-time quality monitoring feasible.</div>
+
+          <div style="text-align: center; margin: 30px 0;">
+            <img src="../assets/images/Automatised_quality_Fig4.png" alt="Image preprocessing pipeline" style="max-width: 100%; height: auto; border: 1px solid #ddd;">
+            <div class="body-text" style="margin-top: 10px; font-size: 0.9em; color: #666;"><strong>Figure 4:</strong> Images pre-processing pipeline showing extraction of the print part from the powder bed and removal of border artifacts</div>
+          </div>
+
+          <div class="body-text">We then analysed the errors to understand the 5% inaccuracy that appeared to be the ceiling for all CNN models. To investigate this further, a confusion matrix of the pre-trained SqueezeNet CNN was constructed, highlighting how the CNN classifies images in comparison with human expert classification. The analysis revealed that the CNN was classifying 3% of images as bulging while they should be classified as normal according to the human expert, and 0.8% as normal while they should be classified as bulging.</div>
+
+          <div style="text-align: center; margin: 30px 0;">
+            <img src="../assets/images/Automatised_quality_Fig7-8.png" alt="Confusion matrix and error analysis" style="max-width: 100%; height: auto; border: 1px solid #ddd;">
+            <div class="body-text" style="margin-top: 10px; font-size: 0.9em; color: #666;"><strong>Figures 7-8:</strong> Confusion matrix of pre-trained SqueezeNet and example images showing classification mismatches between CNN predictions and human expert labels</div>
+          </div>
+
+          <div class="body-text">By examining the misclassified images more closely, we found that the confusion could be explained by slightly visible bulging that is tolerable and therefore categorized as normal by the human expert, but detected by the CNN's quantitative approach. Rather than wrong classification by the CNN, these classification mismatches are more likely to highlight human errors during the monotonous task of classifying such images. Therefore, the CNN performance is likely to be higher than the 95% plateau, suggesting that some human misclassifications were correctly identified by the Convolutional Neural Networks.</div>
+        </div>
+      </div>
+
+      <!-- CONCLUSION -->
+      <div id="project-details">
+        <div class="subheader-text">Conclusion</div>
+        <div class="project-details-content">
+          <div class="body-text">The results showed that ELO images can be correctly classified by a CNN without too much difficulty, allowing automatic monitoring of the printing state in real-time. This work proves that EBM printing quality of a single layer can be monitored in real-time using ELO images with great accuracy (95%), leading to the development of ML feedback loops for metal powder bed fusion additive manufacturing. The research demonstrates the great potential to support in-process layer quality control of EBM and establishes foundations for automated quality assessment systems in additive manufacturing.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+      <a class="icon-link" href="mailto:le.roux.leopoldja@gmail.com">
+        <image src="../assets/icons/mail.svg" class="footer-icon"/>
+      </a>
+    </div>
+
+	</body>
+</html> 

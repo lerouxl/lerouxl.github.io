@@ -24,7 +24,7 @@ body {
   margin: 225px 425px;
   display: flex;
   flex-direction: column;
-  gap: 96px;
+  gap: 80px;
 }
 
 
@@ -65,7 +65,8 @@ body {
 #about-section {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 20px;
+  padding: 20px 0;
 }
 
 .about-section-content {
@@ -79,10 +80,13 @@ body {
 
 /* Project Section */
 
-#my-work-section {
+#my-work-section,
+#my-projects-section,
+#research-papers-section {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 20px;
+  padding: 20px 0;
 }
 
 .projects-container {
